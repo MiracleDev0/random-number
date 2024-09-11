@@ -23,13 +23,15 @@ function RandomNumberGenerator() {
         type="number" 
         value={min} 
         onChange={e => setMin(e.target.value)} 
-        placeholder="Minimum number" 
+        placeholder="Minimum number"
+        min="1" 
       />
       <input 
         type="number" 
         value={max} 
         onChange={e => setMax(e.target.value)} 
-        placeholder="Maximum number" 
+        placeholder="Maximum number"
+        min="1" 
       />
       <button onClick={generateRandomNumber}>Generate</button>
       {randomNumber !== null && (
